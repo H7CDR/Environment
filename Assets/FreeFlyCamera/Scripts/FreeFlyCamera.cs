@@ -89,6 +89,7 @@ public class FreeFlyCamera : MonoBehaviour
     private Vector3 _initRotation;
 
     public GameObject fogVolume;
+    public GameObject cameraPath;
 
 #if UNITY_EDITOR
     private void OnValidate()
@@ -195,6 +196,19 @@ public class FreeFlyCamera : MonoBehaviour
 
                 fogVolume.SetActive(currentState);
             }
+
+            if (Input.GetKeyDown(KeyCode.P))
+            {
+                bool cameraState = cameraPath.activeSelf;
+
+                cameraState = !cameraState;
+
+                cameraPath.SetActive(cameraState);
+
+                cameraPath.GetComponent<CPC_CameraPath>().PlayPath(20f);
+            }
+
+
 
             // Calc acceleration
             CalculateCurrentIncrease(deltaPosition != Vector3.zero);

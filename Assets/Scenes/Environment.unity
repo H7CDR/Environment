@@ -662,7 +662,7 @@ MonoBehaviour:
   lookAtTarget: 0
   target: {fileID: 0}
   playOnAwake: 1
-  playOnAwakeTime: 10
+  playOnAwakeTime: 20
   points:
   - position: {x: 38.973934, y: 29.026892, z: 2.25345}
     rotation: {x: 0.00787755, y: 0.92203194, z: 0.070499174, w: -0.38055867}
@@ -1372,6 +1372,7 @@ MonoBehaviour:
   _speedAccelerationFactor: 1.5
   _initPositonButton: 114
   fogVolume: {fileID: 628475071}
+  cameraPath: {fileID: 675751195}
 --- !u!1001 &941865451
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2935,7 +2936,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -10, y: -10}
-  m_SizeDelta: {x: 325, y: 261.41}
+  m_SizeDelta: {x: 325, y: 280.37}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &661572497269491117
 MonoBehaviour:
@@ -3033,27 +3034,30 @@ MonoBehaviour:
 
     Use:
 
-    > ''MouseMove''
-    to rotate;
+    >''P''
+    To exit camera path. Press again to re-enter the path.
+
+    > ''MouseMove'' to
+    rotate;
 
     > ''W'',''A'',''S'',''D'',''Q'',''E'' to move;
 
-    > ''Left
-    Shift'' to accelerate the movement speed;
+    > ''Left Shift''
+    to accelerate the movement speed;
 
-    > ''Mouse Scroll Wheel'' to zoom
-    in/out;
+    > ''Mouse Scroll Wheel'' to zoom in/out;
 
-    > ''Escape'' to unlock control and show the pointer;
+    >
+    ''Escape'' to unlock control and show the pointer;
 
-    > ''Left
-    Mouse Button'' click on in-game screen (in play mode) to lock control and hide
-    the pointer;
+    > ''Left Mouse Button''
+    click on in-game screen (in play mode) to lock control and hide the pointer;
 
-    > ''R'' to return camera into initial position.
+    >
+    ''R'' to return camera into initial position.
 
-    > ''B''
-    to switch between two brightness mode.
+    > ''B'' to switch between
+    two brightness mode.
 
     > ''alt''+''f4'' to close the application.
 
